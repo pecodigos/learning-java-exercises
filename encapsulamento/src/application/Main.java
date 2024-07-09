@@ -1,8 +1,5 @@
 package application;
 
-import java.util.Scanner;
-import entities.Product;
-
 public class Main
 {
     public static void main(String[] args)
@@ -11,18 +8,15 @@ public class Main
 
         System.out.println("Enter product data: ");
         System.out.print("Name: ");
-        String name = sc.nextLine();
+        product.name = sc.nextLine();
 
         System.out.print("Price: ");
-        double price = sc.nextDouble();
-        Product product = new Product(name, price);
+        product.price = sc.nextDouble();
 
-        product.setName("Computer");
-        System.out.println("Updated name: " + product.getName());
-        product.setPrice(1200.00);
-        System.out.println("Updated price: " + product.getPrice());
-
+        System.out.print("Quantity in stock: ");
+        product.quantity = sc.nextInt();
         System.out.println();
+
         System.out.println("Product data: " + product);
         System.out.println();
 
