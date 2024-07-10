@@ -1,6 +1,6 @@
 package application;
 
-import util.BankAccount;
+import entities.BankAccount;
 import java.util.Scanner;
 
 public class Main
