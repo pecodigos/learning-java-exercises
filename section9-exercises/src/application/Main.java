@@ -9,6 +9,7 @@ public class Main
     {
         Scanner sc = new Scanner(System.in);
 
+        // Initializing account for possible first deposit and print message
         BankAccount account = new BankAccount();
 
         System.out.print("Enter account number: ");
@@ -18,14 +19,15 @@ public class Main
         System.out.print("Enter account holder: ");
         String accountHolder = sc.nextLine();
 
-        System.out.print("Is there an initial deposit (y/n)?");
+        // Input 'y' or 'n'
+        account.printMessage();
         String answer = sc.next();
 
-
+        // Loop if the user didn't input the valid answer
         while (!answer.equals("y") && !answer.equals("n"))
         {
             System.out.println("Error:\nYou didn't input a valid answer.");
-            System.out.print("Is there an initial deposit (y/n)?");
+            account.printMessage();
             answer = sc.next();
         }
 
@@ -37,7 +39,7 @@ public class Main
         }
         else
         {
-            // Making sure no error has occurred.
+            // Making sure to capture unknown error.
             System.out.println("Unknown error has occurred.");
         }
 

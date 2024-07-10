@@ -51,6 +51,11 @@ public class BankAccount
         return accountID;
     }
 
+    public void printMessage()
+    {
+        System.out.print("Is there an initial deposit (y/n)?");
+    }
+
 
     public String accountData()
     {
