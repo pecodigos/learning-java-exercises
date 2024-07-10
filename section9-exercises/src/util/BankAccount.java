@@ -9,13 +9,7 @@ public class BankAccount
     public BankAccount()
     {}
 
-    public BankAccount(double accountBalance, String name)
-    {
-        this.accountBalance = accountBalance;
-        this.name = name;
-    }
-
-    public BankAccount(int accountID, double accountBalance, String name)
+    public BankAccount(int accountID, String name, double accountBalance)
     {
         this.accountID = accountID;
         this.accountBalance = accountBalance;
@@ -29,8 +23,34 @@ public class BankAccount
 
     public void withdraw(double money)
     {
-        accountBalance -= money;
+        accountBalance -= money + 5.00;
     }
+
+    public String getName()
+    {
+        return name;
+    }
+
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
+    public double getAccountBalance()
+    {
+        return accountBalance;
+    }
+
+    public void setAccountBalance(double accountBalance)
+    {
+        this.accountBalance = accountBalance;
+    }
+
+    public int getAccountID()
+    {
+        return accountID;
+    }
+
 
     public String accountData()
     {
