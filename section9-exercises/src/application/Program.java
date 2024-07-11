@@ -3,7 +3,7 @@ package application;
 import entities.BankAccount;
 import java.util.Scanner;
 
-public class Main
+public class Program
 {
     public static void main(String[] args)
     {
@@ -36,11 +36,6 @@ public class Main
             System.out.print("Enter initial deposit value: ");
             double firstDeposit = sc.nextDouble();
             account.deposit(firstDeposit);
-        }
-        else
-        {
-            // Making sure to capture unknown error.
-            System.out.println("Unknown error has occurred.");
         }
 
         BankAccount bankAccount = new BankAccount(accountNumber, accountHolder, account.getAccountBalance());

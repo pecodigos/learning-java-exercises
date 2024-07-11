@@ -9,21 +9,17 @@ public class BankAccount
     public BankAccount()
     {}
 
+    public BankAccount(int accountID, String name)
+    {
+        this.accountID = accountID;
+        this.name = name;
+    }
+
     public BankAccount(int accountID, String name, double accountBalance)
     {
         this.accountID = accountID;
         this.accountBalance = accountBalance;
         this.name = name;
-    }
-
-    public void deposit(double money)
-    {
-        accountBalance += money;
-    }
-
-    public void withdraw(double money)
-    {
-        accountBalance -= money + 5.00;
     }
 
     public String getName()
@@ -41,11 +37,6 @@ public class BankAccount
         return accountBalance;
     }
 
-    public void setAccountBalance(double accountBalance)
-    {
-        this.accountBalance = accountBalance;
-    }
-
     public int getAccountID()
     {
         return accountID;
@@ -56,13 +47,22 @@ public class BankAccount
         System.out.print("Is there an initial deposit (y/n)?");
     }
 
+    public void deposit(double money)
+    {
+        accountBalance += money;
+    }
+
+    public void withdraw(double money)
+    {
+        accountBalance -= money + 5.00;
+    }
 
     public String accountData()
     {
         return "Account "
-                + accountID
+                + getAccountID()
                 + ", Holder: "
-                + name
+                + getName()
                 + ", Balance: $"
                 + String.format("%.2f", accountBalance);
     }
