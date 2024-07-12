@@ -2,19 +2,19 @@ package entities;
 
 public class Number
 {
-    private int number;
+    private double number;
 
-    public Number(int number)
+    public Number(double number)
     {
         this.number = number;
     }
 
-    public int getNumber()
+    public double getNumber()
     {
         return number;
     }
 
-    public void setNumber(int number)
+    public void setNumber(double number)
     {
         this.number = number;
     }
