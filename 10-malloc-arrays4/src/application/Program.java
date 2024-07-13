@@ -1,7 +1,6 @@
 package application;
 
 import entities.Room;
-
 import java.util.Scanner;
 
 public class Program
@@ -18,18 +17,16 @@ public class Program
             sc.nextLine();
         }
 
-        String[] personName = new String[n];
-        String[] personEmail = new String[n];
         Room[] rooms = new Room[10];
 
         for (int i = 0; i < n; i++)
         {
             System.out.printf("Rent #%d:\n", i + 1);
             System.out.print("Name: ");
-            personName[i] = sc.nextLine();
+            String name = sc.nextLine();
 
             System.out.print("Email: ");
-            personEmail[i] = sc.nextLine();
+            String email = sc.nextLine();
 
             int room = -1;
             System.out.print("Room: ");
@@ -38,7 +35,7 @@ public class Program
                 room = sc.nextInt();
                 sc.nextLine();
             }
-            rooms[room] = new Room(personName[i], personEmail[i], room);
+            rooms[room] = new Room(name, email, room);
         }
 
         System.out.println("\nBusy rooms:");
