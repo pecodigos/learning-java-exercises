@@ -99,7 +99,7 @@ public class Order
 
         for (OrderItem orderItem : orderItems)
         {
-            sb.append(orderItem.getProduct().getName()).append(", $").append(String.format("%.2f", orderItem.getPrice())).append(", Quantity: ").append(orderItem.getQuantity()).append(", Subtotal: $").append(String.format("%.2f", orderItem.subTotal())).append("\n");
+            sb.append(orderItem).append("\n");
         }
         sb.append("Total price: $").append(String.format("%.2f", total()));
         return sb.toString();
