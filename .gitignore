@@ -61,7 +61,6 @@
      **/.idea/
      .idea_modules/
      out/
-     *.xml
 
      # NetBeans
      nbproject/private/
