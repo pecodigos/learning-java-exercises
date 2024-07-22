@@ -61,7 +61,6 @@
      .idea/
      .idea_modules/
      out/
-     **/.idea/
 
      # NetBeans
      nbproject/private/
