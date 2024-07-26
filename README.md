@@ -7,4 +7,4 @@
 
 ##
 
-#### On fixation exercises, I won't have any help besides from passed exercises. I'm not using AI, and I'm not seeing Nélio's solution before managing to do it by myself.
+#### On fixation exercises, I won't have any help besides from past exercises. I'm not using AI, and I'm not seeing Nélio's solution before managing to do it by myself.
