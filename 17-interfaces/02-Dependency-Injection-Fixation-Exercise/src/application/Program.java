@@ -16,7 +16,6 @@ public class Program {
         Scanner sc = new Scanner(System.in);
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
-
         System.out.println("Enter contract data...");
 
         System.out.print("Number: ");
