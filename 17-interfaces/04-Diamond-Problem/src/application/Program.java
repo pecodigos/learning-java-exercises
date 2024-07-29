@@ -23,7 +23,5 @@ public class Program {
         comboDevice.print("My stuff...");
         System.out.println("Scan result: " + comboDevice.scan());
 
-
-
     }
 }
