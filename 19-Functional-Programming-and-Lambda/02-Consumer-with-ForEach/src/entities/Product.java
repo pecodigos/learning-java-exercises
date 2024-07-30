@@ -26,8 +26,8 @@ public class Product {
         this.price = price;
     }
 
-    public static void staticPriceUpdate(Product p) {
-        p.setPrice(p.getPrice() * 1.1);
+    public void nonStaticPriceUpdate() {
+        setPrice(getPrice() * 1.1); // price = price * 1.1;
     }
 
     @Override
