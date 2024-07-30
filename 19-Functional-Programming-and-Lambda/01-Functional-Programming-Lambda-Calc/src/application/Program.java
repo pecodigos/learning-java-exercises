@@ -19,9 +19,7 @@ public class Program {
 
         double min = 100.0;
 
-        Predicate<Product> predicate = p -> p.getPrice() >= min;
-
-        list.removeIf(predicate);
+        list.removeIf(p -> p.getPrice() >= min);
 
         for (Product p : list) {
             System.out.println(p);
