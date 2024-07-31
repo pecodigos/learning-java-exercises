@@ -1,10 +1,10 @@
 package application;
 
 import entities.Product;
+import model.services.ProductService;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Program {
 
@@ -14,11 +14,15 @@ public class Program {
 
         list.add(new Product("Tv", 900.00));
         list.add(new Product("Mouse", 50.00));
-        list.add(new Product("Table", 350.50));
+        list.add(new Product("Tablet", 350.50));
         list.add(new Product("HD Case", 80.90));
 
-        List <String> names = list.stream().map(p -> p.getName().toUpperCase()).collect(Collectors.toList());
+        ProductService ps = new ProductService();
 
-        names.forEach(System.out::println);
+        char letter = 'T';
+
+        double sum = ps.filteredSum(list, p -> p.getName().charAt(0) == letter);
+
+        System.out.println("Sum = " + String.format("%.2f", sum));
     }
 }
