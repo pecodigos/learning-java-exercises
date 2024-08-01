@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/00-Comparator/00-Comparator.iml" filepath="$PROJECT_DIR$/00-Comparator/00-Comparator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01-Functional-Programming-Lambda-Calc/01-Functional-Programming-Lambda-Calc.iml" filepath="$PROJECT_DIR$/01-Functional-Programming-Lambda-Calc/01-Functional-Programming-Lambda-Calc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-Consumer-with-ForEach/02-Consumer-with-ForEach.iml" filepath="$PROJECT_DIR$/02-Consumer-with-ForEach/02-Consumer-with-ForEach.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03-Function-with-Map/03-Function-with-Map.iml" filepath="$PROJECT_DIR$/03-Function-with-Map/03-Function-with-Map.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04-function-arguments/04-function-arguments.iml" filepath="$PROJECT_DIR$/04-function-arguments/04-function-arguments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05-stream/05-stream.iml" filepath="$PROJECT_DIR$/05-stream/05-stream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06-pipeline/06-pipeline.iml" filepath="$PROJECT_DIR$/06-pipeline/06-pipeline.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07-Assisted-Exercise/07-Assisted-Exercise.iml" filepath="$PROJECT_DIR$/07-Assisted-Exercise/07-Assisted-Exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08-Fixation-Exercise/08-Fixation-Exercise.iml" filepath="$PROJECT_DIR$/08-Fixation-Exercise/08-Fixation-Exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/19-Functional-Programming-and-Lambda.iml" filepath="$PROJECT_DIR$/.idea/19-Functional-Programming-and-Lambda.iml" />
+    </modules>
+  </component>
+</project>
